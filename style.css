@@ -1,0 +1,325 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*head*/
+.header{
+	min-height: 100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/background-image.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+
+nav{
+	display: flex;
+	padding:2% 6%;
+	justify-content:space-between;
+	align-items: center;
+}
+nav img{
+    width:150px;
+}
+.link{
+	flex: 1;
+	text-align:right;
+}
+.link ul li{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.link ul li a{
+	color: white;
+	text-decoration:none;
+	font-size:15px;
+	font-family:'poppins', sans-serif;
+}
+.link ul li::before{
+	content:'';
+	width: 0px;
+	height:2px;
+	background:#f44336;
+	display: block;
+	margin:auto;
+	transition:0.5s;
+}
+.link ul li:hover::before{
+        width:60px;
+}
+.text{
+	width:90%;
+	color: white;
+	position: absolute;
+	top:50%;
+	left:4%;
+	text-align: center;
+
+}
+.text h1{
+   font-size:62px;
+}
+.text p {
+	margin:10px 0 40px;
+	font-size:18px;
+	color:white;
+}
+.text a {
+	
+	padding: 12px 34px;
+	position: relative;
+	font-size:18px;
+	color:white;
+}
+.text a:hover{
+	color: #f44336;
+}
+/*about*/
+.about{
+  width:100%;
+  margin:auto;
+  text-align: center;
+  padding-top:50px;
+ 
+}
+
+
+.imageColumn {
+   float: left;
+   width: 30%;
+   padding: 15px;
+}
+
+.section1 h1 {
+    font-size: 30px;
+
+}
+.section1 p{
+	color:#f44336;
+	font-size:16px;
+	 font-weight: 300;
+	 line-height: 22px;
+	 padding: 10px;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+ 
+/* course*/
+
+.course{
+	width:100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 450px;
+}
+h1{
+     font-size: 25px;
+
+}
+p{
+	color:black;
+	font-size:14px;
+	line-height: 22px;
+	padding: 10px;
+}
+.row{
+    margin-top:3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+	flex-basis: 31%;
+	background:#ffb399;
+	border-radius:10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.1s;
+}
+h3{
+	text-align: center;
+	margin: 10px 0;
+}
+.course-col:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+/* blog */
+
+.blog{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top:25px;
+}
+h1{
+     font-size: 25px;
+
+}
+p{
+	color:black;
+	font-size:14px;
+	line-height: 22px;
+	padding: 10px;
+}
+.blog-col{
+	border-radius: 10px;
+	margin-bottom:30px;
+	position:relative;
+	overflow: hidden;
+}
+/*facilities*/
+
+.facilities{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top:45px;
+
+}
+
+/*testimonials*/
+.testimonials{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top:45px;
+
+}
+.testimonials-col{
+	background:#ffb399;
+	text-align: center;
+	margin-bottom:5%;
+	border-radius:10px;
+	padding: 25px;
+	
+	display: flex;
+	flex-basis: 40%;
+}
+.testimonials-col h4{
+	margin-top:100px;
+	text-align:center;
+
+}
+.testimonials-col p{
+	padding: 0px;
+	text-align:right;
+}
+.testimonials-col .fa{
+	color: black;
+}
+
+
+/* contact*/
+
+.contact{
+	text-align: center;
+	font-size: 25px;
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/contactbg.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+}
+.contact p{
+	font-size: 18px;
+	color:white;
+	margin-bottom: 40px;
+	padding: 0;
+}
+/* footer*/
+.footer{
+	width:100%;
+	text-align: center;
+	padding:30px 0;
+
+}
+.footer p{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	text-align: center;
+
+}
+.footer-icons{
+	font-family: "open sans";
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.footer-icons a{
+         font-size: 30px;
+         padding:10px;
+         transition: 0.5s;
+}
+.footer-icons a:hover i{
+	color:aqua;
+}
+
+.footer-bottom p{
+      word-spacing: 2px;
+      font-size: 14px;
+      text-align: center;
+      font-size: 20px;
+}
+.footer-bottom span{
+       text-transform: uppercase;
+       opacity: .4;
+       font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
